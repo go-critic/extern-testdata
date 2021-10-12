@@ -1,0 +1,125 @@
+./arrays.go:83:4: assignOp: replace `count = count + 1` with `count++`
+./error.go:36:7: hugeParam: e is heavy (80 bytes); consider passing it by pointer
+./numerics.go:14:2: ifElseChain: rewrite if-else to switch statement
+./numerics.go:73:1: paramTypeCombine: func(value interface{}, left interface{}, right interface{}) bool could be replaced with func(value, left, right interface{}) bool
+./numerics.go:74:2: typeSwitchVar: 1 case can benefit from type switch with assignment
+./patterns.go:89:43: badRegexp: suspicious char range ` -~` in [ -~]
+./patterns.go:91:43: badRegexp: suspicious char range ` -~` in [^ -~｡-ﾟﾠ-ￜ￨-￮0-9a-zA-Z]
+./patterns.go:91:43: badRegexp: suspicious char range `｡-ﾟ` in [^ -~｡-ﾟﾠ-ￜ￨-￮0-9a-zA-Z]
+./patterns.go:91:43: badRegexp: suspicious char range `￨-￮` in [^ -~｡-ﾟﾠ-ￜ￨-￮0-9a-zA-Z]
+./patterns.go:91:43: badRegexp: ` -~` intersects with `0-9` in [^ -~｡-ﾟﾠ-ￜ￨-￮0-9a-zA-Z]
+./patterns.go:92:43: badRegexp: suspicious char range ` -~` in [ -~｡-ﾟﾠ-ￜ￨-￮0-9a-zA-Z]
+./patterns.go:92:43: badRegexp: suspicious char range `｡-ﾟ` in [ -~｡-ﾟﾠ-ￜ￨-￮0-9a-zA-Z]
+./patterns.go:92:43: badRegexp: suspicious char range `￨-￮` in [ -~｡-ﾟﾠ-ￜ￨-￮0-9a-zA-Z]
+./patterns.go:92:43: badRegexp: ` -~` intersects with `0-9` in [ -~｡-ﾟﾠ-ￜ￨-￮0-9a-zA-Z]
+./patterns.go:70:43: regexpSimplify: can re-write `^[^\s]+\.[^\s]+$` as `^\S+\.\S+$`
+./patterns.go:71:43: regexpSimplify: can re-write `(^[.]{1})|([.]{1}$)|([.]{2,})` as `(^[.])|([.]$)|([.]{2,})`
+./patterns.go:74:43: regexpSimplify: can re-write `^(?:[0-9]{9}X|[0-9]{10})$` as `^(?:\d{9}X|\d{10})$`
+./patterns.go:75:43: regexpSimplify: can re-write `^(?:[0-9]{13})$` as `^(?:\d{13})$`
+./patterns.go:82:43: regexpSimplify: can re-write `^[0-9]+$` as `^\d+$`
+./patterns.go:83:43: regexpSimplify: can re-write `^(?:[-+]?(?:0|[1-9][0-9]*))$` as `^(?:[-+]?(?:0|[1-9]\d*))$`
+./patterns.go:94:43: regexpSimplify: can re-write `^data:.+\/(.+);base64$` as `^data:.+/(.+);base64$`
+./patterns.go:108:43: regexpSimplify: can re-write `.*[[:space:]]` as `.*\s`
+./patterns.go:109:43: regexpSimplify: can re-write `^[[:space:]]+$` as `^\s+$`
+./types.go:180:1: commentFormatting: put a space between `//` and comment text
+./types.go:470:1: commentFormatting: put a space between `//` and comment text
+./utils.go:214:1: paramTypeCombine: func(str string, padStr string, padLen int) string could be replaced with func(str, padStr string, padLen int) string
+./utils.go:219:1: paramTypeCombine: func(str string, padStr string, padLen int) string could be replaced with func(str, padStr string, padLen int) string
+./utils.go:224:1: paramTypeCombine: func(str string, padStr string, padLen int) string could be replaced with func(str, padStr string, padLen int) string
+./utils.go:230:1: paramTypeCombine: func(str string, padStr string, padLen int, padLeft bool, padRight bool) string could be replaced with func(str, padStr string, padLen int, padLeft, padRight bool) string
+./utils.go:156:21: regexpMust: for const patterns like `[ &_=+:]`, use regexp.MustCompile
+./utils.go:160:16: regexpMust: for const patterns like `[^[:alnum:]-.]`, use regexp.MustCompile
+./utils.go:165:10: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(name, "--", "-", -1)`
+./utils.go:102:9: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(strings.Title(strings.Replace(strings.ToLower(s), "_", " ", -1)), " ", "", -1)`
+./utils.go:102:39: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(strings.ToLower(s), "_", " ", -1)`
+./validator.go:686:6: builtinShadow: shadowing of predeclared identifier: len
+./validator.go:1329:3: builtinShadow: shadowing of predeclared identifier: len
+./validator.go:133:16: commentFormatting: put a space between `//` and comment text
+./validator.go:136:16: commentFormatting: put a space between `//` and comment text
+./validator.go:157:1: commentFormatting: put a space between `//` and comment text
+./validator.go:187:53: commentFormatting: put a space between `//` and comment text
+./validator.go:217:29: commentFormatting: put a space between `//` and comment text
+./validator.go:238:28: commentFormatting: put a space between `//` and comment text
+./validator.go:587:3: commentFormatting: put a space between `//` and comment text
+./validator.go:599:1: commentFormatting: put a space between `//` and comment text
+./validator.go:602:3: commentFormatting: put a space between `//` and comment text
+./validator.go:612:1: commentFormatting: put a space between `//` and comment text
+./validator.go:1625:6: commentFormatting: put a space between `//` and comment text
+./validator.go:321:9: emptyStringTest: replace `len(str) == 0` with `str == ""`
+./validator.go:135:5: emptyStringTest: replace `len(url.Scheme) == 0` with `url.Scheme == ""`
+./validator.go:1418:37: hugeParam: t is heavy (97 bytes); consider passing it by pointer
+./validator.go:1438:33: hugeParam: t is heavy (97 bytes); consider passing it by pointer
+./validator.go:689:2: ifElseChain: rewrite if-else to switch statement
+./validator.go:131:2: importShadow: shadow of imported package 'url'
+./validator.go:921:19: ioutilDeprecated: ioutil.ReadAll is deprecated, use io.ReadAll instead
+./validator.go:685:1: paramTypeCombine: func(str string, algorithm string) bool could be replaced with func(str, algorithm string) bool
+./validator.go:1005:1: paramTypeCombine: func(s map[string]interface{}, m map[string]interface{}) (bool, error) could be replaced with func(s, m map[string]interface{}) (bool, error)
+./validator.go:1194:1: paramTypeCombine: func(s map[string]interface{}, m map[string]interface{}) (<-chan bool, <-chan error) could be replaced with func(s, m map[string]interface{}) (<-chan bool, <-chan error)
+./validator.go:1274:1: paramTypeCombine: func(str string, format string) bool could be replaced with func(str, format string) bool
+./validator.go:1482:128: redundantSprint: use v.String() instead
+./validator.go:1485:115: redundantSprint: use v.String() instead
+./validator.go:1538:13: redundantSprint: use v.String() instead
+./validator.go:1590:15: redundantSprint: use v.String() instead
+./validator.go:1614:15: redundantSprint: use v.String() instead
+./validator.go:28:47: regexpSimplify: can re-write `[^0-9]+` as `\D+`
+./validator.go:1154:7: singleCaseSwitch: should rewrite switch statement to if statement
+./validator.go:585:1: unnamedResult: consider giving a name to these results
+./validator.go:1176:1: unnamedResult: consider giving a name to these results
+./validator.go:1194:1: unnamedResult: consider giving a name to these results
+./validator.go:1268:10: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(reflect.TypeOf(v).String(), " ", "", -1)`
+./validator.go:676:22: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(str, ".", "", -1)`
+./validator.go:1268:70: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(typ, " ", "", -1)`
+./arrays_benchmark_test.go:30:4: assignOp: replace `acc = acc + value.(int)` with `acc += value.(int)`
+./arrays_example_test.go:8:23: commentedOutCode: may want to remove commented-out code
+./arrays_example_test.go:24:20: commentedOutCode: may want to remove commented-out code
+./arrays_test.go:11:3: assignOp: replace `acc = acc + value.(int)` with `acc += value.(int)`
+./converter_test.go:47:2: commentFormatting: put a space between `//` and comment text
+./converter_test.go:74:6: redundantSprint: use err.Error() instead
+./converter_test.go:75:103: redundantSprint: use err.Error() instead
+./validator_test.go:43:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:44:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:45:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:103:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:104:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:105:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:164:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:165:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:166:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:223:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:224:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:225:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:282:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:283:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:284:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:343:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:344:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:345:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:402:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:403:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:404:22: commentFormatting: put a space between `//` and comment text
+./validator_test.go:577:35: commentFormatting: put a space between `//` and comment text
+./validator_test.go:578:35: commentFormatting: put a space between `//` and comment text
+./validator_test.go:579:35: commentFormatting: put a space between `//` and comment text
+./validator_test.go:580:35: commentFormatting: put a space between `//` and comment text
+./validator_test.go:581:35: commentFormatting: put a space between `//` and comment text
+./validator_test.go:582:35: commentFormatting: put a space between `//` and comment text
+./validator_test.go:583:35: commentFormatting: put a space between `//` and comment text
+./validator_test.go:584:35: commentFormatting: put a space between `//` and comment text
+./validator_test.go:585:35: commentFormatting: put a space between `//` and comment text
+./validator_test.go:586:35: commentFormatting: put a space between `//` and comment text
+./validator_test.go:587:35: commentFormatting: put a space between `//` and comment text
+./validator_test.go:588:35: commentFormatting: put a space between `//` and comment text
+./validator_test.go:2070:53: commentFormatting: put a space between `//` and comment text
+./validator_test.go:2105:48: commentFormatting: put a space between `//` and comment text
+./validator_test.go:2133:31: commentFormatting: put a space between `//` and comment text
+./validator_test.go:2134:31: commentFormatting: put a space between `//` and comment text
+./validator_test.go:2135:31: commentFormatting: put a space between `//` and comment text
+./validator_test.go:2136:31: commentFormatting: put a space between `//` and comment text
+./validator_test.go:2137:31: commentFormatting: put a space between `//` and comment text
+./validator_test.go:3431:2: commentFormatting: put a space between `//` and comment text
+./validator_test.go:3802:20: commentFormatting: put a space between `//` and comment text
+./validator_test.go:3804:18: commentFormatting: put a space between `//` and comment text
+./validator_test.go:3810:67: commentFormatting: put a space between `//` and comment text
+./validator_test.go:2730:3: singleCaseSwitch: should rewrite switch statement to if statement
+./validator_test.go:2741:3: singleCaseSwitch: should rewrite switch statement to if statement
+./validator_test.go:2743:11: yodaStyleExpr: consider to change order in expression to v.CustomMinLength < len(v.ID)
