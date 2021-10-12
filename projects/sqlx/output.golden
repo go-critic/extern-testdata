@@ -1,0 +1,72 @@
+exit status 1
+./bind.go:106:4: preferWriteByte: consider replacing rqb.WriteRune('$') with rqb.WriteByte('$')
+./bind.go:142:1: unnamedResult: consider giving a name to these results
+./named.go:409:1: deprecatedComment: use `Deprecated: ` (note the casing) instead of `DEPRECATED: `
+./named.go:342:3: ifElseChain: rewrite if-else to switch statement
+./named.go:45:10: newDeref: replace `*new(sql.Result)` with `sql.Result(nil)`
+./named.go:101:1: paramTypeCombine: func(dest interface{}, arg interface{}) error could be replaced with func(dest, arg interface{}) error
+./named.go:113:1: paramTypeCombine: func(dest interface{}, arg interface{}) error could be replaced with func(dest, arg interface{}) error
+./named.go:213:1: unnamedResult: consider giving a name to these results
+./named.go:273:1: unnamedResult: consider giving a name to these results
+./named.go:304:1: unnamedResult: consider giving a name to these results
+./named.go:410:1: unnamedResult: consider giving a name to these results
+./named.go:417:1: unnamedResult: consider giving a name to these results
+./named.go:421:1: unnamedResult: consider giving a name to these results
+./named_context.go:39:10: newDeref: replace `*new(sql.Result)` with `sql.Result(nil)`
+./named_context.go:95:1: paramTypeCombine: func(ctx context.Context, dest interface{}, arg interface{}) error could be replaced with func(ctx context.Context, dest, arg interface{}) error
+./named_context.go:107:1: paramTypeCombine: func(ctx context.Context, dest interface{}, arg interface{}) error could be replaced with func(ctx context.Context, dest, arg interface{}) error
+./sqlx.go:709:19: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
+./sqlx.go:704:39: ptrToRefParam: consider to make non-pointer type for `*sql.Result`
+./sqlx.go:936:3: typeSwitchVar: 1 case can benefit from type switch with assignment
+./sqlx.go:298:1: unnamedResult: consider giving a name to these results
+./sqlx.go:412:1: unnamedResult: consider giving a name to these results
+./sqlx_context.go:102:19: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
+./sqlx_context.go:97:74: ptrToRefParam: consider to make non-pointer type for `*sql.Result`
+./sqlx_context_test.go:95:4: commentFormatting: put a space between `//` and comment text
+./sqlx_context_test.go:834:3: commentFormatting: put a space between `//` and comment text
+./sqlx_context_test.go:1277:3: commentFormatting: put a space between `//` and comment text
+./sqlx_context_test.go:834:3: commentedOutCode: may want to remove commented-out code
+./sqlx_context_test.go:1277:3: commentedOutCode: may want to remove commented-out code
+./sqlx_context_test.go:362:7: emptyStringTest: replace `len(em.Emp1.Name) == 0` with `em.Emp1.Name == ""`
+./sqlx_context_test.go:362:33: emptyStringTest: replace `len(em.Emp2.Name) == 0` with `em.Emp2.Name == ""`
+./sqlx_context_test.go:322:7: emptyStringTest: replace `len(em.Employee.Name) == 0` with `em.Employee.Name == ""`
+./sqlx_context_test.go:280:7: emptyStringTest: replace `len(l3.Loop2.Loop1.Person.FirstName) == 0` with `l3.Loop2.Loop1.Person.FirstName == ""`
+./sqlx_context_test.go:245:6: emptyStringTest: replace `len(perp.Person.FirstName) == 0` with `perp.Person.FirstName == ""`
+./sqlx_context_test.go:248:6: emptyStringTest: replace `len(perp.Place.Country) == 0` with `perp.Place.Country == ""`
+./sqlx_context_test.go:265:7: emptyStringTest: replace `len(pp.Person.FirstName) == 0` with `pp.Person.FirstName == ""`
+./sqlx_context_test.go:221:7: emptyStringTest: replace `len(pp.Person.FirstName) == 0` with `pp.Person.FirstName == ""`
+./sqlx_context_test.go:268:7: emptyStringTest: replace `len(pp.Place.Country) == 0` with `pp.Place.Country == ""`
+./sqlx_context_test.go:224:7: emptyStringTest: replace `len(pp.Place.Country) == 0` with `pp.Place.Country == ""`
+./sqlx_context_test.go:33:5: emptyStringTest: replace `len(strings.Trim(stmts[len(stmts)-1], " \n\t\r")) == 0` with `strings.Trim(stmts[len(stmts)-1], " \n\t\r") == ""`
+./sqlx_context_test.go:509:12: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(s, `"`, "`", -1)`
+./sqlx_test.go:272:4: commentFormatting: put a space between `//` and comment text
+./sqlx_test.go:1019:3: commentFormatting: put a space between `//` and comment text
+./sqlx_test.go:1581:3: commentFormatting: put a space between `//` and comment text
+./sqlx_test.go:1019:3: commentedOutCode: may want to remove commented-out code
+./sqlx_test.go:1581:3: commentedOutCode: may want to remove commented-out code
+./sqlx_test.go:536:7: emptyStringTest: replace `len(em.Emp1.Name) == 0` with `em.Emp1.Name == ""`
+./sqlx_test.go:536:33: emptyStringTest: replace `len(em.Emp2.Name) == 0` with `em.Emp2.Name == ""`
+./sqlx_test.go:496:7: emptyStringTest: replace `len(em.Employee.Name) == 0` with `em.Employee.Name == ""`
+./sqlx_test.go:454:7: emptyStringTest: replace `len(l3.Loop2.Loop1.Person.FirstName) == 0` with `l3.Loop2.Loop1.Person.FirstName == ""`
+./sqlx_test.go:420:6: emptyStringTest: replace `len(perp.Person.FirstName) == 0` with `perp.Person.FirstName == ""`
+./sqlx_test.go:423:6: emptyStringTest: replace `len(perp.Place.Country) == 0` with `perp.Place.Country == ""`
+./sqlx_test.go:439:7: emptyStringTest: replace `len(pp.Person.FirstName) == 0` with `pp.Person.FirstName == ""`
+./sqlx_test.go:397:7: emptyStringTest: replace `len(pp.Person.FirstName) == 0` with `pp.Person.FirstName == ""`
+./sqlx_test.go:442:7: emptyStringTest: replace `len(pp.Place.Country) == 0` with `pp.Place.Country == ""`
+./sqlx_test.go:400:7: emptyStringTest: replace `len(pp.Place.Country) == 0` with `pp.Place.Country == ""`
+./sqlx_test.go:210:5: emptyStringTest: replace `len(strings.Trim(stmts[len(stmts)-1], " \n\t\r")) == 0` with `strings.Trim(stmts[len(stmts)-1], " \n\t\r") == ""`
+./sqlx_test.go:1867:4: typeSwitchVar: 1 case can benefit from type switch with assignment
+./sqlx_test.go:1886:4: typeSwitchVar: 1 case can benefit from type switch with assignment
+./sqlx_test.go:101:1: unnamedResult: consider giving a name to these results
+./sqlx_test.go:105:1: unnamedResult: consider giving a name to these results
+./sqlx_test.go:109:1: unnamedResult: consider giving a name to these results
+./sqlx_test.go:683:12: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(s, `"`, "`", -1)`
+./sqlx_test.go:106:9: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(s.create, `"`, "`", -1)`
+./sqlx_test.go:110:9: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(s.create, `now()`, `CURRENT_TIMESTAMP`, -1)`
+./reflectx/reflect.go:397:7: emptyStringTest: replace `len(f.PkgPath) != 0` with `f.PkgPath != ""`
+./reflectx/reflect.go:283:16: hugeParam: field is heavy (97 bytes); consider passing it by pointer
+./reflectx/reflect.go:157:24: newDeref: replace `*new(reflect.Value)` with `reflect.Value{}`
+./reflectx/reflect_test.go:69:2: commentedOutCode: may want to remove commented-out code
+./reflectx/reflect_test.go:139:2: commentedOutCode: may want to remove commented-out code
+./reflectx/reflect_test.go:323:2: commentedOutCode: may want to remove commented-out code
+./types/types.go:46:12: ioutilDeprecated: ioutil.ReadAll is deprecated, use io.ReadAll instead
