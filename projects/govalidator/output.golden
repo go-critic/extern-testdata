@@ -1,3 +1,4 @@
+exit status 1
 ./arrays.go:83:4: assignOp: replace `count = count + 1` with `count++`
 ./error.go:36:7: hugeParam: e is heavy (80 bytes); consider passing it by pointer
 ./numerics.go:14:2: ifElseChain: rewrite if-else to switch statement
