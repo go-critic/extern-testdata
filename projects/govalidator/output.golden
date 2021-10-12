@@ -123,4 +123,3 @@ exit status 1
 ./validator_test.go:3810:67: commentFormatting: put a space between `//` and comment text
 ./validator_test.go:2730:3: singleCaseSwitch: should rewrite switch statement to if statement
 ./validator_test.go:2741:3: singleCaseSwitch: should rewrite switch statement to if statement
-./validator_test.go:2743:11: yodaStyleExpr: consider to change order in expression to v.CustomMinLength < len(v.ID)
