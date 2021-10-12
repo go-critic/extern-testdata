@@ -1,0 +1,26 @@
+exit status 1
+./box.go:34:13: importShadow: shadow of imported package 'path'
+./box.go:65:24: importShadow: shadow of imported package 'path'
+./box.go:71:23: importShadow: shadow of imported package 'path'
+./box.go:133:15: ioutilDeprecated: ioutil.ReadAll is deprecated, use io.ReadAll instead
+./box.go:224:16: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
+./box.go:65:1: paramTypeCombine: func(path string, t string) error could be replaced with func(path, t string) error
+./box.go:216:1: paramTypeCombine: func(p string, name string) (File, error) could be replaced with func(p, name string) (File, error)
+./packr.go:16:1: paramTypeCombine: func(box string, name string, bb []byte) could be replaced with func(box, name string, bb []byte)
+./packr.go:26:1: paramTypeCombine: func(box string, name string, bb []byte) error could be replaced with func(box, name string, bb []byte) error
+./packr.go:42:1: paramTypeCombine: func(box string, name string, jbb string) error could be replaced with func(box, name, jbb string) error
+./packr.go:62:15: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(path, "/", "\\", -1)`
+./packr.go:71:10: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(path, "/", "\\", -1)`
+./http_box_test.go:18:14: httpNoBody: http.NoBody should be preferred to the nil request body
+./http_box_test.go:58:14: httpNoBody: http.NoBody should be preferred to the nil request body
+./http_box_test.go:74:14: httpNoBody: http.NoBody should be preferred to the nil request body
+./builder/box.go:41:14: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
+./builder/box.go:34:10: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(name, "\\", "/", -1)`
+./builder/box.go:55:16: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(string(bb), "\"", "\\\"", -1)`
+./builder/builder.go:53:7: equalFold: consider replacing with strings.EqualFold(f, base)
+./builder/visitor.go:29:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
+./builder/visitor.go:227:6: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(b, "\"", "", -1)`
+./builder/builder_test.go:32:13: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
+./builder/builder_test.go:38:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
+./builder/builder_test.go:63:13: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
+./builder/builder_test.go:68:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
