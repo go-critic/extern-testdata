@@ -1,0 +1,3 @@
+exit status 1
+./algo_hs.go:33:2: importShadow: shadow of imported package 'hash'
+./errors.go:10:15: typeUnparen: could simplify (Error) to Error
