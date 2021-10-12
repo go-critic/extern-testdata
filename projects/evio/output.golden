@@ -1,0 +1,67 @@
+exit status 1
+./evio.go:254:9: emptyStringTest: replace `len(kv[1]) != 0` with `kv[1] != ""`
+./evio.go:252:5: singleCaseSwitch: should rewrite switch statement to if statement
+./evio_std.go:116:2: commentFormatting: put a space between `//` and comment text
+./evio_std.go:230:3: commentFormatting: put a space between `//` and comment text
+./evio_std.go:255:2: commentFormatting: put a space between `//` and comment text
+./evio_std.go:116:2: commentedOutCode: may want to remove commented-out code
+./evio_std.go:230:3: commentedOutCode: may want to remove commented-out code
+./evio_std.go:255:2: commentedOutCode: may want to remove commented-out code
+./evio_std.go:125:3: singleCaseSwitch: should rewrite switch statement to if statement
+./evio_std.go:260:4: singleCaseSwitch: should rewrite switch statement to if statement
+./evio_std.go:326:4: singleCaseSwitch: should rewrite switch statement to if statement
+./evio_std.go:334:4: singleCaseSwitch: should rewrite switch statement to if statement
+./evio_std.go:409:3: singleCaseSwitch: should rewrite switch statement to if statement
+./evio_std.go:289:1: unlabelStmt: label loop is redundant
+./evio_unix.go:59:2: commentFormatting: put a space between `//` and comment text
+./evio_unix.go:102:2: commentFormatting: put a space between `//` and comment text
+./evio_unix.go:137:3: commentFormatting: put a space between `//` and comment text
+./evio_unix.go:219:3: commentFormatting: put a space between `//` and comment text
+./evio_unix.go:228:2: commentFormatting: put a space between `//` and comment text
+./evio_unix.go:102:2: commentedOutCode: may want to remove commented-out code
+./evio_unix.go:137:3: commentedOutCode: may want to remove commented-out code
+./evio_unix.go:219:3: commentedOutCode: may want to remove commented-out code
+./evio_unix.go:228:2: commentedOutCode: may want to remove commented-out code
+./evio_unix.go:260:3: nestingReduce: invert if cond, replace body with `continue`, move old body after the statement
+./evio_unix.go:337:3: singleCaseSwitch: should rewrite switch statement to if statement
+./evio_unix.go:518:3: singleCaseSwitch: should rewrite switch statement to if statement
+./evio_test.go:176:4: commentFormatting: put a space between `//` and comment text
+./evio_test.go:176:4: commentedOutCode: may want to remove commented-out code
+./evio_test.go:285:10: elseif: can replace 'else {if cond {}}' with 'else if cond {}'
+./evio_test.go:144:12: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(network, "-net", "", -1)`
+./benchmarks/analyze.go:109:2: commentFormatting: put a space between `//` and comment text
+./benchmarks/analyze.go:109:2: commentedOutCode: may want to remove commented-out code
+./benchmarks/analyze.go:50:3: ifElseChain: rewrite if-else to switch statement
+./benchmarks/analyze.go:64:5: ifElseChain: rewrite if-else to switch statement
+./benchmarks/analyze.go:114:16: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
+./benchmarks/analyze.go:33:10: wrapperFunc: use strings.ReplaceAll method in `strings.Replace("out/"+category+".png", " ", "_", -1)`
+./benchmarks/analyze.go:54:16: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(category, "bench ", "", -1)`
+./benchmarks/analyze.go:62:45: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(line, "*** ", "", -1)`
+./benchmarks/analyze.go:53:48: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(line, "--- ", "", -1)`
+./benchmarks/analyze.go:58:44: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(line, "--- ", "", -1)`
+./benchmarks/analyze.go:58:28: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(strings.Replace(line, "--- ", "", -1), " ---", "", -1)`
+./benchmarks/analyze.go:53:32: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(strings.Replace(line, "--- ", "", -1), " START ---", "", -1)`
+./benchmarks/net-echo-server/main.go:33:5: commentFormatting: put a space between `//` and comment text
+./benchmarks/net-echo-server/main.go:36:4: commentFormatting: put a space between `//` and comment text
+./benchmarks/net-echo-server/main.go:33:5: commentedOutCode: may want to remove commented-out code
+./benchmarks/net-echo-server/main.go:36:4: commentedOutCode: may want to remove commented-out code
+./benchmarks/net-echo-server/main.go:28:4: exitAfterDefer: log.Fatal will exit, and `defer ln.Close()` will not run
+./examples/http-server/main.go:70:3: commentFormatting: put a space between `//` and comment text
+./examples/http-server/main.go:75:3: commentFormatting: put a space between `//` and comment text
+./examples/http-server/main.go:70:3: commentedOutCode: may want to remove commented-out code
+./examples/http-server/main.go:75:3: commentedOutCode: may want to remove commented-out code
+./examples/redis-server/main.go:61:3: commentFormatting: put a space between `//` and comment text
+./examples/redis-server/main.go:61:3: commentedOutCode: may want to remove commented-out code
+./examples/redis-server/main.go:66:3: commentedOutCode: may want to remove commented-out code
+./examples/redis-server/main.go:97:6: ifElseChain: rewrite if-else to switch statement
+./internal/internal_linux.go:13:6: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:20:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:38:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:46:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:54:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:80:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:91:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:102:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:113:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:124:1: docStub: silencing go lint doc-comment warnings is unadvised
+

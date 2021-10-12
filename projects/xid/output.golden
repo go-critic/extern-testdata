@@ -1,0 +1,6 @@
+exit status 1
+./hostid_linux.go:8:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
+./hostid_linux.go:10:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
+./id.go:123:19: emptyStringTest: replace `len(hid) != 0` with `hid != ""`
+./id.go:120:19: emptyStringTest: replace `len(hid) == 0` with `hid == ""`
+./id.go:108:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
