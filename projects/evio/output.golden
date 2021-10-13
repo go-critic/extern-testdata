@@ -28,6 +28,10 @@ exit status 1
 ./evio_test.go:176:4: commentFormatting: put a space between `//` and comment text
 ./evio_test.go:176:4: commentedOutCode: may want to remove commented-out code
 ./evio_test.go:285:10: elseif: can replace 'else {if cond {}}' with 'else if cond {}'
+./evio_test.go:337:7: stringXbytes: suggestion: !bytes.Equal(cin, expected)
+./evio_test.go:174:6: stringXbytes: suggestion: !bytes.Equal(data, data2)
+./evio_test.go:408:5: stringXbytes: suggestion: !bytes.Equal(data, in)
+./evio_test.go:436:15: stringXbytes: suggestion: bytes.Equal(in, prev)
 ./evio_test.go:144:12: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(network, "-net", "", -1)`
 ./benchmarks/analyze.go:109:2: commentFormatting: put a space between `//` and comment text
 ./benchmarks/analyze.go:109:2: commentedOutCode: may want to remove commented-out code
