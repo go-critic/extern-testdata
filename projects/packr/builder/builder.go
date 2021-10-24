@@ -75,7 +75,7 @@ func (b *Builder) Run() error {
 }
 
 func (b *Builder) dump() error {
-	for _, p := range b.pkgs {
+	dumpPkg := func(p pkg) error {
 		name := filepath.Join(p.Dir, "a_"+p.Name+"-packr.go")
 		f, err := os.Create(name)
 		defer f.Close()
@@ -89,6 +89,13 @@ func (b *Builder) dump() error {
 		}
 		err = t.Execute(f, p)
 		if err != nil {
+			return err
+		}
+		return nil
+	}
+
+	for _, p := range b.pkgs {
+		if err := dumpPkg(p); err != nil {
 			return err
 		}
 	}
