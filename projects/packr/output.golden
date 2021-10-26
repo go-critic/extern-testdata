@@ -24,3 +24,4 @@ exit status 1
 ./builder/builder_test.go:38:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
 ./builder/builder_test.go:63:13: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
 ./builder/builder_test.go:68:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
+./builder/builder.go:81:3: deferInLoop: Possible resource leak, 'defer' is called in the 'for' loop
