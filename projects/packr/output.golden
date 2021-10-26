@@ -17,6 +17,7 @@ exit status 1
 ./builder/box.go:41:14: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
 ./builder/box.go:34:10: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(name, "\\", "/", -1)`
 ./builder/box.go:55:16: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(string(bb), "\"", "\\\"", -1)`
+./builder/builder.go:81:3: deferInLoop: Possible resource leak, 'defer' is called in the 'for' loop
 ./builder/builder.go:53:7: equalFold: consider replacing with strings.EqualFold(f, base)
 ./builder/visitor.go:29:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
 ./builder/visitor.go:227:6: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(b, "\"", "", -1)`
@@ -24,4 +25,3 @@ exit status 1
 ./builder/builder_test.go:38:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
 ./builder/builder_test.go:63:13: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
 ./builder/builder_test.go:68:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
-./builder/builder.go:81:3: deferInLoop: Possible resource leak, 'defer' is called in the 'for' loop
