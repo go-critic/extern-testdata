@@ -1,5 +1,5 @@
 exit status 1
-./bind.go:106:4: preferWriteByte: consider replacing rqb.WriteRune('$') with rqb.WriteByte('$')
+./bind.go:106:4: preferWriteByte: consider writing single byte rune '$' with rqb.WriteByte('$')
 ./bind.go:142:1: unnamedResult: consider giving a name to these results
 ./named.go:409:1: deprecatedComment: use `Deprecated: ` (note the casing) instead of `DEPRECATED: `
 ./named.go:342:3: ifElseChain: rewrite if-else to switch statement
