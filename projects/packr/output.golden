@@ -11,9 +11,9 @@ exit status 1
 ./packr.go:42:1: paramTypeCombine: func(box string, name string, jbb string) error could be replaced with func(box, name, jbb string) error
 ./packr.go:62:15: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(path, "/", "\\", -1)`
 ./packr.go:71:10: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(path, "/", "\\", -1)`
-./http_box_test.go:18:14: httpNoBody: http.NoBody should be preferred to the nil request body
-./http_box_test.go:58:14: httpNoBody: http.NoBody should be preferred to the nil request body
-./http_box_test.go:74:14: httpNoBody: http.NoBody should be preferred to the nil request body
+./http_box_test.go:18:51: httpNoBody: http.NoBody should be preferred to the nil request body
+./http_box_test.go:58:54: httpNoBody: http.NoBody should be preferred to the nil request body
+./http_box_test.go:74:42: httpNoBody: http.NoBody should be preferred to the nil request body
 ./builder/box.go:41:14: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
 ./builder/box.go:34:10: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(name, "\\", "/", -1)`
 ./builder/box.go:55:16: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(string(bb), "\"", "\\\"", -1)`
