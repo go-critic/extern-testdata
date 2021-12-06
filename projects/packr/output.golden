@@ -25,3 +25,5 @@ exit status 1
 ./builder/builder_test.go:38:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
 ./builder/builder_test.go:63:13: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
 ./builder/builder_test.go:68:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
+./validator.go:1088:24: undefinedFormatting: use errors.New(required.customErrorMessage) or fmt.Errorf("%s", required.customErrorMessage) instead
+./validator.go:1428:32: undefinedFormatting: use errors.New(requiredOption.customErrorMessage) or fmt.Errorf("%s", requiredOption.customErrorMessage) instead
