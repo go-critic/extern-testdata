@@ -46,6 +46,8 @@ exit status 1
 ./validator.go:602:3: commentFormatting: put a space between `//` and comment text
 ./validator.go:612:1: commentFormatting: put a space between `//` and comment text
 ./validator.go:1625:6: commentFormatting: put a space between `//` and comment text
+./validator.go:1088:24: dynamicFmtString: use errors.New(required.customErrorMessage) or fmt.Errorf("%s", required.customErrorMessage) instead
+./validator.go:1428:32: dynamicFmtString: use errors.New(requiredOption.customErrorMessage) or fmt.Errorf("%s", requiredOption.customErrorMessage) instead
 ./validator.go:321:9: emptyStringTest: replace `len(str) == 0` with `str == ""`
 ./validator.go:135:5: emptyStringTest: replace `len(url.Scheme) == 0` with `url.Scheme == ""`
 ./validator.go:1418:37: hugeParam: t is heavy (97 bytes); consider passing it by pointer
@@ -64,8 +66,6 @@ exit status 1
 ./validator.go:1614:15: redundantSprint: use v.String() instead
 ./validator.go:28:47: regexpSimplify: can re-write `[^0-9]+` as `\D+`
 ./validator.go:1154:7: singleCaseSwitch: should rewrite switch statement to if statement
-./validator.go:1088:24: dynamicFmtString: use errors.New(required.customErrorMessage) or fmt.Errorf("%s", required.customErrorMessage) instead
-./validator.go:1428:32: dynamicFmtString: use errors.New(requiredOption.customErrorMessage) or fmt.Errorf("%s", requiredOption.customErrorMessage) instead
 ./validator.go:585:1: unnamedResult: consider giving a name to these results
 ./validator.go:1176:1: unnamedResult: consider giving a name to these results
 ./validator.go:1194:1: unnamedResult: consider giving a name to these results
