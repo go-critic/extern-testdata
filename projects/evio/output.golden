@@ -43,8 +43,8 @@ exit status 1
 ./benchmarks/analyze.go:62:45: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(line, "*** ", "", -1)`
 ./benchmarks/analyze.go:53:48: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(line, "--- ", "", -1)`
 ./benchmarks/analyze.go:58:44: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(line, "--- ", "", -1)`
-./benchmarks/analyze.go:58:28: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(strings.Rep<...> ", "", -1), " ---", "", -1)`
-./benchmarks/analyze.go:53:32: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(strings.Rep<...>, -1), " START ---", "", -1)`
+./benchmarks/analyze.go:58:28: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(strings.Replace(line, "--- ", "", -1), " ---", "", -1)`
+./benchmarks/analyze.go:53:32: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(strings.Replace(line, "--- ", "", -1), " START ---", "", -1)`
 ./benchmarks/net-echo-server/main.go:33:5: commentFormatting: put a space between `//` and comment text
 ./benchmarks/net-echo-server/main.go:36:4: commentFormatting: put a space between `//` and comment text
 ./benchmarks/net-echo-server/main.go:33:5: commentedOutCode: may want to remove commented-out code
@@ -58,13 +58,14 @@ exit status 1
 ./examples/redis-server/main.go:61:3: commentedOutCode: may want to remove commented-out code
 ./examples/redis-server/main.go:66:3: commentedOutCode: may want to remove commented-out code
 ./examples/redis-server/main.go:97:6: ifElseChain: rewrite if-else to switch statement
-./internal/internal_bsd.go:14:6: docStub: silencing go lint doc-comment warnings is unadvised
-./internal/internal_bsd.go:21:1: docStub: silencing go lint doc-comment warnings is unadvised
-./internal/internal_bsd.go:41:1: docStub: silencing go lint doc-comment warnings is unadvised
-./internal/internal_bsd.go:46:1: docStub: silencing go lint doc-comment warnings is unadvised
-./internal/internal_bsd.go:57:1: docStub: silencing go lint doc-comment warnings is unadvised
-./internal/internal_bsd.go:81:1: docStub: silencing go lint doc-comment warnings is unadvised
-./internal/internal_bsd.go:90:1: docStub: silencing go lint doc-comment warnings is unadvised
-./internal/internal_bsd.go:102:1: docStub: silencing go lint doc-comment warnings is unadvised
-./internal/internal_bsd.go:109:1: docStub: silencing go lint doc-comment warnings is unadvised
-./internal/internal_bsd.go:116:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:13:6: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:20:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:38:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:46:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:54:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:80:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:91:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:102:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:113:1: docStub: silencing go lint doc-comment warnings is unadvised
+./internal/internal_linux.go:124:1: docStub: silencing go lint doc-comment warnings is unadvised
+
