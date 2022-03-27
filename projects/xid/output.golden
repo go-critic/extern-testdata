@@ -1,4 +1,0 @@
-exit status 1
-./id.go:123:19: emptyStringTest: replace `len(hid) != 0` with `hid != ""`
-./id.go:120:19: emptyStringTest: replace `len(hid) == 0` with `hid == ""`
-./id.go:108:12: ioutilDeprecated: ioutil.ReadFile is deprecated, use os.ReadFile instead
