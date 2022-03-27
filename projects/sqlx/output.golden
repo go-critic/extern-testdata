@@ -62,7 +62,7 @@ exit status 1
 ./sqlx_test.go:109:1: unnamedResult: consider giving a name to these results
 ./sqlx_test.go:683:12: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(s, `"`, "`", -1)`
 ./sqlx_test.go:106:9: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(s.create, `"`, "`", -1)`
-./sqlx_test.go:110:9: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(s.create, `<...>)`, `CURRENT_TIMESTAMP`, -1)`
+./sqlx_test.go:110:9: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(s.create, `now()`, `CURRENT_TIMESTAMP`, -1)`
 ./reflectx/reflect.go:397:7: emptyStringTest: replace `len(f.PkgPath) != 0` with `f.PkgPath != ""`
 ./reflectx/reflect.go:283:16: hugeParam: field is heavy (97 bytes); consider passing it by pointer
 ./reflectx/reflect.go:157:24: newDeref: replace `*new(reflect.Value)` with `reflect.Value{}`

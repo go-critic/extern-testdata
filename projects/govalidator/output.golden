@@ -31,7 +31,7 @@ exit status 1
 ./utils.go:156:21: regexpMust: for const patterns like `[ &_=+:]`, use regexp.MustCompile
 ./utils.go:160:16: regexpMust: for const patterns like `[^[:alnum:]-.]`, use regexp.MustCompile
 ./utils.go:165:10: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(name, "--", "-", -1)`
-./utils.go:102:9: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(strings.Tit<...>"_", " ", -1)), " ", "", -1)`
+./utils.go:102:9: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(strings.Title(strings.Replace(strings.ToLower(s), "_", " ", -1)), " ", "", -1)`
 ./utils.go:102:39: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(strings.ToLower(s), "_", " ", -1)`
 ./validator.go:686:6: builtinShadow: shadowing of predeclared identifier: len
 ./validator.go:1329:3: builtinShadow: shadowing of predeclared identifier: len
@@ -69,7 +69,7 @@ exit status 1
 ./validator.go:585:1: unnamedResult: consider giving a name to these results
 ./validator.go:1176:1: unnamedResult: consider giving a name to these results
 ./validator.go:1194:1: unnamedResult: consider giving a name to these results
-./validator.go:1268:10: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(reflect.Typ<...>Of(v).String(), " ", "", -1)`
+./validator.go:1268:10: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(reflect.TypeOf(v).String(), " ", "", -1)`
 ./validator.go:676:22: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(str, ".", "", -1)`
 ./validator.go:1268:70: wrapperFunc: use strings.ReplaceAll method in `strings.Replace(typ, " ", "", -1)`
 ./arrays_benchmark_test.go:30:4: assignOp: replace `acc = acc + value.(int)` with `acc += value.(int)`
