@@ -59,11 +59,6 @@ exit status 1
 ./validator.go:1005:1: paramTypeCombine: func(s map[string]interface{}, m map[string]interface{}) (bool, error) could be replaced with func(s, m map[string]interface{}) (bool, error)
 ./validator.go:1194:1: paramTypeCombine: func(s map[string]interface{}, m map[string]interface{}) (<-chan bool, <-chan error) could be replaced with func(s, m map[string]interface{}) (<-chan bool, <-chan error)
 ./validator.go:1274:1: paramTypeCombine: func(str string, format string) bool could be replaced with func(str, format string) bool
-./validator.go:1482:128: redundantSprint: use v.String() instead
-./validator.go:1485:115: redundantSprint: use v.String() instead
-./validator.go:1538:13: redundantSprint: use v.String() instead
-./validator.go:1590:15: redundantSprint: use v.String() instead
-./validator.go:1614:15: redundantSprint: use v.String() instead
 ./validator.go:28:47: regexpSimplify: can re-write `[^0-9]+` as `\D+`
 ./validator.go:1154:7: singleCaseSwitch: should rewrite switch statement to if statement
 ./validator.go:585:1: unnamedResult: consider giving a name to these results
